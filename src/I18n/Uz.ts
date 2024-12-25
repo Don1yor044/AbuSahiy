@@ -1,16 +1,16 @@
 const Uz = {
-  title: "Hisobni o'chirish yoki ilovalarni boshqarish",
-  description:
-    "Telegram API yordamida ilovalaringizni boshqarish yoki hisobni o'chirish uchun tizimga kiring. Telefon raqamingizni kiriting, biz Telegram orqali tasdiqlash kodini yuboramiz (SMS emas).",
-  phoneLabel: "Sizning telefon raqamingiz",
-  phonePlaceholder: "Telefon raqamini xalqaro formatda kiriting",
-  confirmCodeLabel: "Tasdiqlash kodini kiriting",
-  getCode: "Kod olish",
-  deleteAccount: "Hisobni o'chirish",
-  confirmModalTitle: "Tasdiqlash",
-  confirmModalMessage: "Barcha ma'lumotlarni o'chirishni xohlaysizmi?",
-  confirm: "Ha, o'chir",
-  cancel: "Bekor qilish",
+  welcome: "xush kelibsiz",
+  Delete: "Hisobni o'chirish ",
+  loginInfo: `Hisobingizni oʻchirish uchun shu yerga kiring. Raqamingizni kiriting va biz sizga Sms orqali tasdiqlash kodini yuboramiz.`,
+  Pnumber: "Sizning telefon raqamingiz",
+  "Please enter your number in": "Iltimos, raqamingizni kiriting",
+  "Enter Confirmation Code": "Tasdiqlash kodini kiriting",
+  "Confirmation code": "Tasdiqlash kodi",
+  "Get Code": "Kodni olish",
+  Confirmation: "Tasdiqlash",
+  "Yes, turn it off": "Ha, o'chir",
+  Cancellation: "Bekor qilish",
+  "Do you want to delete all data?":
+    "Barcha ma'lumotlarni o'chirishni xohlaysizmi?",
 };
-
 export default Uz;

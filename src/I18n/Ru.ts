@@ -1,16 +1,14 @@
 const Ru = {
-  title: "Удалить аккаунт или управлять приложениями",
-  description:
-    "Войдите сюда, чтобы управлять своими приложениями через API Telegram или удалить свой аккаунт. Введите номер, и мы отправим вам код подтверждения через Telegram (не SMS).",
-  phoneLabel: "Ваш номер телефона",
-  phonePlaceholder: "Введите номер телефона в международном формате",
-  confirmCodeLabel: "Введите код подтверждения",
-  getCode: "Получить код",
-  deleteAccount: "Удалить аккаунт",
-  confirmModalTitle: "Подтверждение",
-  confirmModalMessage: "Вы уверены, что хотите удалить все данные?",
-  confirm: "Да, удалить",
-  cancel: "Отмена",
+  welcome: "dobra",
+  Delete: "Удалить аккаунт",
+  loginInfo: `Войдите здесь, чтобы удалить свою учетную запись. Введите свой номер, и мы отправим вам код подтверждения по SMS.`,
+  Pnumber: "Ваш номер телефона",
+  "Enter Confirmation Code": "Введите код подтверждения",
+  "Confirmation code": "Код подтверждения",
+  "Get Code": "Получить код",
+  Confirmation: "Подтверждение",
+  "Yes, turn it off": "Да, выключи это",
+  Cancellation: "Отмена",
+  "Do you want to delete all data?": "Вы хотите удалить все данные?",
 };
-
 export default Ru;

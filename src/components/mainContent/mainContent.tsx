@@ -1,19 +1,20 @@
-import { Button, Input, Modal } from "antd";
+import { Input, Modal } from "antd";
 import { useState } from "react";
 import "react-toastify/dist/ReactToastify.css";
 
-import { toast, ToastContainer } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import { useTranslation } from "react-i18next";
 export const MainContent = () => {
   const { t } = useTranslation();
+
   const [phoneNumber, setPhoneNumber] = useState("");
   const [confirmCode, setConfirmCode] = useState("");
   const [isCodeSent, setIsCodeSent] = useState(false);
 
   const [isModalVisible, setIsModalVisible] = useState(false);
 
-  const notify = () => toast.error("The code is not correct!");
-  const notifySuccess = () => toast.success("The code is correct!");
+  //   const notify = () => toast.error("The code is not correct!");
+  //   const notifySuccess = () => toast.success("The code is correct!");
 
   //   const handlePhoneSubmit = async () => {
   //     try {
@@ -78,18 +79,14 @@ export const MainContent = () => {
               className="mt-[-40px]"
             />
           </div>
-          <div className="w-full px-5 sm:px-10 md:w-[50%] md:px-0 lg:w-[40%] xl:w-[35%]">
-            <p className="text-xl font-bold">Delete Account or Manage Apps</p>
-            <p className="text-[#737373]">
-              Log in here to <strong>manage your apps</strong> using Telegram
-              API or <strong>delete your account</strong>. Enter your number and
-              we will send you a confirmation code via Telegram (not SMS).
-            </p>
+          <div className="w-full px-5 sm:px-10 md:w-[50%] md:px-0 lg:w-[40%] xl:w-[35%] ">
+            <p className="text-xl font-bold">{t(`Delete`)}</p>
+            <p className="text-[#737373] mt-2">{t(`loginInfo`)}</p>
 
             {/* Telefon raqam kiritish */}
             <div className="mt-5 flex flex-col">
               <label htmlFor="toggle" className="font-bold">
-                Your Phone Number
+                {t(`Pnumber`)}
               </label>
               <Input
                 type="number"
@@ -99,24 +96,20 @@ export const MainContent = () => {
                 onChange={(e) => setPhoneNumber(e.target.value)}
                 className="mt-1 rounded-md"
               />
-              <p className="text-[#737373]">
-                Please enter your number in{" "}
-                <span className="text-[#0088cc]">international format</span>
-              </p>
             </div>
 
             {/* Kod kiritish */}
             {isCodeSent && (
               <div className="mt-5 flex flex-col">
                 <label htmlFor="confirmCode" className="font-bold">
-                  Enter Confirmation Code
+                  {t(`Enter Confirmation Code`)}
                 </label>
                 <input
                   type="number"
                   id="confirmCode"
                   value={confirmCode}
                   onChange={(e) => setConfirmCode(e.target.value)}
-                  placeholder="Confirmation code"
+                  placeholder={t("Confirmation code")}
                   className="mt-1 rounded-md border border-gray-300 p-2"
                 />
               </div>
@@ -132,25 +125,25 @@ export const MainContent = () => {
                 }
               }}
             >
-              {isCodeSent ? "Delete Account" : "Get Code"}
+              {isCodeSent ? t(`Delete`) : t("Get Code")}
             </button>
-            <Button onClick={notifySuccess}>success</Button>
-            <Button onClick={notify}>error</Button>
+            {/* <Button onClick={notifySuccess}>success</Button>
+            <Button onClick={notify}>error</Button> */}
 
             <ToastContainer />
           </div>
         </div>
       </div>
       <Modal
-        title="Tasdiqlash"
+        title={t("Confirmation")}
         visible={isModalVisible}
         onOk={handleOk}
         onCancel={handleCancel}
-        okText="Ha, o'chir"
-        cancelText="Bekor qilish"
+        okText={t("Yes, turn it off")}
+        cancelText={t("Cancellation")}
       >
         <p className="text-base font-semibold">
-          Barcha ma'lumotlarni o'chirishni xohlaysizmi?
+          {t(`Do you want to delete all data?`)}
         </p>
       </Modal>
     </>

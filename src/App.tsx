@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { MainContent } from "./components";
+import { Select } from "antd";
 
 const App = () => {
   const { i18n } = useTranslation();
@@ -7,20 +8,19 @@ const App = () => {
   return (
     <>
       {/* Til tanlash select */}
-      <div className="flex items-center justify-end">
-        <form className="w-24">
-          <select
-            onChange={(e) => {
-              i18n.changeLanguage(e.target.value);
-              localStorage.setItem("selectedLanguage", e.target.value);
-            }}
-            defaultValue={i18n.language}
-          >
-            <option value="En">English</option>
-            <option value="Uz">O‘zbekcha</option>
-            <option value="Ru">Русский</option>
-          </select>
-        </form>
+      <div className="flex items-center justify-end ">
+        <Select
+          className="min-w-28"
+          onChange={(value) => {
+            i18n.changeLanguage(value); // Tanlangan tilni o'zgartirish
+            localStorage.setItem("selectedLanguage", value); // Tilni localStorage'ga saqlash
+          }}
+          defaultValue={i18n.language} // Hozirgi tilni ko'rsatish
+        >
+          <Select.Option value="En">English</Select.Option>
+          <Select.Option value="Uz">O‘zbekcha</Select.Option>
+          <Select.Option value="Ru">Русский</Select.Option>
+        </Select>
       </div>
 
       {/* Asosiy kontent */}
