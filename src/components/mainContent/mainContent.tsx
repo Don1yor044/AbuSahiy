@@ -79,8 +79,12 @@ export const MainContent = () => {
             />
           </div>
           <div className="w-full px-5 sm:px-10 md:w-[50%] md:px-0 lg:w-[40%] xl:w-[35%]">
-            <p className="text-xl font-bold">{t("title")}</p>
-            <p className="text-[#737373]">{t("description")}</p>
+            <p className="text-xl font-bold">Delete Account or Manage Apps</p>
+            <p className="text-[#737373]">
+              Log in here to <strong>manage your apps</strong> using Telegram
+              API or <strong>delete your account</strong>. Enter your number and
+              we will send you a confirmation code via Telegram (not SMS).
+            </p>
 
             {/* Telefon raqam kiritish */}
             <div className="mt-5 flex flex-col">
