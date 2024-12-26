@@ -7,8 +7,9 @@ const Ru = {
   "Confirmation code": "Код подтверждения",
   "Get Code": "Получить код",
   Confirmation: "Подтверждение",
-  "Yes, turn it off": "Да, выключи это",
-  Cancellation: "Отмена",
-  "Do you want to delete all data?": "Вы хотите удалить все данные?",
+  Yes: "Да",
+  Cancel: "Отмена",
+  "are you sure to delete your account? your data will be deleted permanently and you cannot login and register again with this credentials":
+    "Вы уверены, что хотите удалить свою учетную запись? Ваши данные будут удалены навсегда, и вы не сможете войти и зарегистрироваться снова с этими учетными данными",
 };
 export default Ru;

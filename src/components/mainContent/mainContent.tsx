@@ -127,9 +127,8 @@ export const MainContent = () => {
             >
               {isCodeSent ? t(`Delete`) : t("Get Code")}
             </button>
-            {/* <Button onClick={notifySuccess}>success</Button>
-            <Button onClick={notify}>error</Button> */}
-
+            {/* <Button onClick={notifySuccess}>success</Button> */}
+            {/* <Button onClick={notify}>error</Button> */}
             <ToastContainer />
           </div>
         </div>
@@ -139,11 +138,13 @@ export const MainContent = () => {
         visible={isModalVisible}
         onOk={handleOk}
         onCancel={handleCancel}
-        okText={t("Yes, turn it off")}
-        cancelText={t("Cancellation")}
+        okText={t("Yes")}
+        cancelText={t("Cancel")}
       >
-        <p className="text-base font-semibold">
-          {t(`Do you want to delete all data?`)}
+        <p className="text-base">
+          {t(
+            `are you sure to delete your account? your data will be deleted permanently and you cannot login and register again with this credentials`
+          )}
         </p>
       </Modal>
     </>

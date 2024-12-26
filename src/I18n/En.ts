@@ -8,8 +8,9 @@ const En = {
   "Confirmation code": "Confirmation Code",
   "Get Code": "Get Code",
   Confirmation: "Confirmation",
-  "Yes, turn it off": "Yes, turn it off",
-  Cancellation: "Cancellation",
-  "Do you want to delete all data?": "Do you want to delete all data?",
+  Yes: "Yes",
+  Cancel: "Cancel",
+  "are you sure to delete your account? your data will be deleted permanently and you cannot login and register again with this credentials":
+    "are you sure to delete your account? your data will be deleted permanently and you cannot login and register again with this credentials",
 };
 export default En;

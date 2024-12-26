@@ -8,9 +8,9 @@ const Uz = {
   "Confirmation code": "Tasdiqlash kodi",
   "Get Code": "Kodni olish",
   Confirmation: "Tasdiqlash",
-  "Yes, turn it off": "Ha, o'chir",
-  Cancellation: "Bekor qilish",
-  "Do you want to delete all data?":
-    "Barcha ma'lumotlarni o'chirishni xohlaysizmi?",
+  Yes: "Ha",
+  Cancel: "Bekor qilish",
+  "are you sure to delete your account? your data will be deleted permanently and you cannot login and register again with this credentials":
+    "hisobingizni o'chirishga ishonchingiz komilmi? ma'lumotlaringiz butunlay o'chiriladi va siz ushbu hisob ma'lumotlari bilan tizimga kirib, qayta ro'yxatdan o'ta olmaysiz",
 };
 export default Uz;
